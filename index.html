@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Essence - Perfumes Originales</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #fff5fa, #ffe6f1);
+      color: #5c2948;
+    }
+
+    header {
+      background: rgba(255, 240, 247, 0.95);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(201, 104, 150, 0.15);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #d14b88;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #8e3a64;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #7a4061;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #d14b88;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: #b63773;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #6d4a5d;
+      max-width: 550px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #ff79b0, #d14b88);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(209, 75, 136, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(209, 75, 136, 0.35);
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 30px;
+      box-shadow: 0 15px 35px rgba(212, 99, 150, 0.25);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #b63773;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #7b5d6d;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(190, 98, 142, 0.12);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      color: #b63773;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      color: #6d4a5d;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #d14b88;
+      font-size: 1.1rem;
+    }
+
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-box {
+      background: rgba(255,255,255,0.9);
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(190, 98, 142, 0.12);
+      width: 100%;
+      max-width: 520px;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .about-box {
+      background: rgba(255,255,255,0.75);
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(190, 98, 142, 0.12);
+    }
+
+    .about-box h3 {
+      color: #b63773;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .about-box p, .about-box li {
+      color: #6d4a5d;
+      line-height: 1.8;
+    }
+
+    .about-box ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    .about-box li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .shipping {
+      background: linear-gradient(135deg, #ffb6d3, #f7d6e5);
+      border-radius: 30px;
+      text-align: center;
+      padding: 50px 30px;
+      box-shadow: 0 10px 25px rgba(190, 98, 142, 0.15);
+    }
+
+    .shipping h2 {
+      font-family: 'Playfair Display', serif;
+      color: #8e3a64;
+      margin-bottom: 15px;
+      font-size: 2.2rem;
+    }
+
+    .shipping p {
+      color: #6d4a5d;
+      font-size: 1.05rem;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #b63773;
+      color: white;
+      padding: 40px 10%;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    footer h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    footer p {
+      margin: 8px 0;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo" style="width: 100%; text-align: center; font-size: 2.5rem;">Forever <span>Rose</span></div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#envios">Envíos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <h1>Perfumes Originales, Nicho e Importados</h1>
+      <p>
+        Descubrí fragancias exclusivas: perfumes nicho, perfumes árabes,
+        miniaturas de marca y perfumes importados 100% originales.
+        Hacemos envíos a todo Paraguay.
+      </p>
+      <a href="#catalogo" class="btn">Ver Catálogo</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=1000" alt="Perfumes de lujo">
+    </div>
+  </section>
+
+  <section id="catalogo">
+    <div class="section-title">
+      <h2>Nuestro Catálogo</h2>
+      <p>Hacé clic en cada categoría para ver los tipos de perfumes disponibles.</p>
+    </div>
+
+    <div class="cards">
+      <details class="card">
+        <summary style="list-style:none; cursor:pointer;">
+          <img src="https://i.pinimg.com/1200x/20/45/4f/20454f9cd47b78a45106478d59e1dad9.jpg" alt="Perfume Nicho">
+          <div class="card-content">
+            <h3>Perfumes Nicho</h3>
+            <p>Fragancias exclusivas y sofisticadas para quienes buscan algo único.</p>
+            <div class="price">Ver opciones disponibles</div>
+          </div>
+        </summary>
+        <div class="card-content" style="border-top:1px solid #f3d0e1; background:#fff8fc;">
+          <ul style="line-height:2; color:#6d4a5d; padding-left:20px;">
+            <li>Maison francis kurkdjian paris</li>
+            <li>Delina Exclusif</li>
+            <li>Xerjoff</li>
+            <li>Oud Satin Mood</li>
+            <li>Tom Ford</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary style="list-style:none; cursor:pointer;">
+          <img src="https://i.pinimg.com/736x/e8/0c/92/e80c92f73c5df5c9f5905e68aeeb79e1.jpg" alt="Perfume Importado">
+          <div class="card-content">
+            <h3>Perfumes Importados</h3>
+            <p>Perfumes originales de las marcas más reconocidas del mundo.</p>
+            <div class="price">Ver lineas disponibles</div>
+          </div>
+        </summary>
+        <div class="card-content" style="border-top:1px solid #f3d0e1; background:#fff8fc;">
+          <ul style="line-height:2; color:#6d4a5d; padding-left:20px;">
+            <li>Carolina Herrera</li>
+            <li>Dior</li>
+            <li>Versace</li>
+            <li>Burberry</li>
+            <li>Paco Rabane</li>
+            <li>Amouage Guidance</li>
+            <li>Lacome</li>
+            <li>Kayali</li>
+            <li>Chanel</li>
+            <li>Prada</li>
+            <li>Kenzo</li>
+            <li>Yves saint laurent</li>
+            <li>Valentino</li>
+            <li>Emporio Armani</li>
+            <li>Dolce & Gabbana</li>
+            <li>Jean Paul Gaultier</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary style="list-style:none; cursor:pointer;">
+          <img src="https://i.pinimg.com/736x/a9/2e/1e/a92e1e2408e2854b0006758b8f8d237d.jpg" alt="Perfumes Árabes">
+          <div class="card-content">
+            <h3>Perfumes Árabes</h3>
+            <p>Fragancias intensas, elegantes y duraderas con esencia oriental.</p>
+            <div class="price">Ver opciones disponibles</div>
+          </div>
+        </summary>
+        <div class="card-content" style="border-top:1px solid #f3d0e1; background:#fff8fc;">
+          <ul style="line-height:2; color:#6d4a5d; padding-left:20px;">
+            <li>Lattafa</li>
+            <li>French Avenue</li>
+            <li>EMIR</li>
+            <li>ARMAF</li>
+            <li>Maison Alhambra</li>
+            <li>Al Wataniah</li>
+            <li>ASDAAF</li>
+            <li>RAVE</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary style="list-style:none; cursor:pointer;">
+          <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-ly3sid3jjg1jd5" alt="Miniaturas de Perfumes">
+          <div class="card-content">
+            <h3>Miniaturas de Marca</h3>
+            <p>Mini perfumes ideales para colección, regalo o llevar a todos lados.</p>
+            <div class="price">Ver opciones disponibles</div>
+          </div>
+        </summary>
+        <div class="card-content" style="border-top:1px solid #f3d0e1; background:#fff8fc;">
+          <ul style="line-height:2; color:#6d4a5d; padding-left:20px;">
+            <li>Brand Colletion</li>
+            <li>Onlyou Colletion</li>
+            <li>Mystical ARABES</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="section-title">
+      <h2>Sobre la Empresa</h2>
+      <p>Acá podés colocar toda la información de tu negocio.</p>
+    </div>
+
+    <div class="about">
+      <div class="about-box">
+        <h3>¿Quiénes Somos?</h3>
+        <p>
+          Somos una empresa dedicada a la venta de perfumes originales,
+          importados y de nicho. Nuestro objetivo es ofrecer productos de
+          calidad, exclusivos y con garantía de autenticidad.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Datos de la Empresa</h3>
+        <ul>
+          <li><strong>Nombre:</strong> FOREVER ROSE</li>
+          <li><strong>Ubicación:</strong> Paraguay sdg</li>
+          <li><strong>WhatsApp:</strong> +595 000 000 000</li>
+          <li><strong>Instagram:</strong> @ForeverRose.py</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="envios">
+    <div class="shipping">
+      <h2>Hacemos Envíos a Todo Paraguay</h2>
+      <p>
+        Trabajamos con envíos rápidos y seguros para que tus perfumes lleguen
+        en perfectas condiciones a cualquier ciudad del país.
+      </p>
+      <a href="https://wa.me/595000000000" class="btn">Consultar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <h3>FOREVER ROSE</h3>
+    <p>Perfumes nicho, importados, árabes y miniaturas originales.</p>
+    <p>WhatsApp: +595 000 000 000</p>
+    <p>Instagram: @ForeverRose.py</p>
+    <p>© 2026 - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
