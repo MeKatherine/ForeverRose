@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff5fa;
+  color: #5c2948;
+}
+
+/* NAV */
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #d14b88;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5c2948;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+/* TITULOS */
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ACORDEON */
+.accordion {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ITEM */
+.item {
+  background: white;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* SUMMARY */
+summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  cursor: pointer;
+  list-style: none;
+}
+
+summary img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* LISTA */
+.item ul {
+  padding: 15px 40px;
+  color: #6d4a5d;
+}
+
+/* BOXES */
+.box {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #d14b88;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
