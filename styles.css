@@ -292,9 +292,9 @@ footer p{
 }
 
 /* ================= WHATSAPP ================= */
+/* BOTONES WHATSAPP */
 .whatsapp{
   position:fixed;
-  bottom:20px;
   right:20px;
   width:65px;
   height:65px;
@@ -304,9 +304,21 @@ footer p{
   display:flex;
   justify-content:center;
   align-items:center;
-  font-size:32px;
   text-decoration:none;
+  font-size:28px;
+  font-weight:bold;
   box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  z-index:999;
+}
+
+/* KATHERINE */
+.whatsapp1{
+  bottom:20px;
+}
+
+/* SARA */
+.whatsapp2{
+  bottom:95px;
 }
 
 /* ================= RESPONSIVE ================= */
