@@ -310,16 +310,17 @@ footer p{
   box-shadow:0 5px 15px rgba(0,0,0,0.2);
   z-index:999;
 }
+/* SARA */
+.whatsapp2{
+  bottom:95px;
+}
 
 /* KATHERINE */
 .whatsapp1{
   bottom:20px;
 }
 
-/* SARA */
-.whatsapp2{
-  bottom:95px;
-}
+
 
 /* ================= RESPONSIVE ================= */
 @media(max-width:768px){
