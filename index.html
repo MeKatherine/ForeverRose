@@ -4,233 +4,963 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Forever Rose - Perfumería</title>
+  <title>Forever Rosé - Perfumería</title>
 
-  <!-- FUENTES -->
+  <!-- ================= FUENTES ================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- ================= CSS ================= -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header>
+
   <div class="nav">
 
-    <div class="logo">
-      Forever <span>Rose</span>
-    </div>
+    <a href="#inicio" class="logo">
+      Forever <span>Rosé</span>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#envios">Envíos</a></li>
+        <li><a href="#pedidos">Pedidos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
   </div>
+
 </header>
 
-<!-- ================= HERO ================= -->
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="hero" id="inicio">
 
-  <div class="hero-text">
+  <div class="hero-text reveal">
+
+    <span class="hero-subtitle">
+      FOREVER ROSÉ
+    </span>
 
     <h1>
-      Perfumes Importados, Árabes, Nichos y Miniaturas
+      Perfumes Importados,
+      Árabes, Nichos y Miniaturas
     </h1>
 
     <p>
-      Descubrí el aroma que define tu estilo, con fragancias exclusivas y elegancia en cada esencia.
+      Descubrí el aroma que define tu estilo,
+      con fragancias exclusivas y elegancia
+      en cada esencia.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#catalogo" class="btn">
+        Ver Catálogo
+      </a>
+
+      <a href="#pedidos" class="btn btn-outline">
+        Hacer un Pedido
+      </a>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     CATALOGO
+===================================================== -->
+
+<section id="catalogo">
+
+  <div class="section-heading reveal">
+
+    <span>DESCUBRÍ NUESTRAS FRAGANCIAS</span>
+
+    <h2 class="title">
+      Catálogo
+    </h2>
+
+    <p>
+      Hacé clic en cada categoría para conocer
+      las opciones disponibles.
     </p>
 
   </div>
 
-</section>
-
-<!-- ================= CATALOGO ================= -->
-<section id="catalogo">
-
-  <h2 class="title">Catálogo</h2>
 
   <div class="accordion">
 
-    <!-- ITEM -->
-    <details class="item">
+
+    <!-- ================= NICHO ================= -->
+
+    <details class="item cascade">
 
       <summary>
 
-        <img src="https://i.pinimg.com/1200x/20/45/4f/20454f9cd47b78a45106478d59e1dad9.jpg">
+        <div class="catalog-image">
 
-        <div>
-          <h3>Perfumes Nichos</h3>
-          <p>"Fragancias exclusivas y sofisticadas"</p>
+          <img
+            src="https://i.pinimg.com/1200x/20/45/4f/20454f9cd47b78a45106478d59e1dad9.jpg"
+            alt="Perfumes Nichos"
+          >
+
+        </div>
+
+        <div class="catalog-info">
+
+          <span class="category-number">
+            01
+          </span>
+
+          <h3>
+            Perfumes Nichos
+          </h3>
+
+          <p>
+            "Fragancias exclusivas y sofisticadas"
+          </p>
+
+          <span class="open-text">
+            Ver opciones disponibles ↓
+          </span>
+
         </div>
 
       </summary>
 
-      <ul>
-        <li>Maison Francis Kurkdjian Paris</li>
-        <li>Delina Exclusif</li>
-        <li>Xerjoff</li>
-        <li>Oud Satin Mood</li>
-        <li>Tom Ford</li>
-      </ul>
+
+      <div class="catalog-content">
+
+        <ul>
+
+          <li>Maison Francis Kurkdjian Paris</li>
+          <li>Delina Exclusif</li>
+          <li>Xerjoff</li>
+          <li>Oud Satin Mood</li>
+          <li>Tom Ford</li>
+
+        </ul>
+
+      </div>
 
     </details>
 
-    <!-- ITEM -->
-    <details class="item">
+
+
+    <!-- ================= IMPORTADOS ================= -->
+
+    <details class="item cascade">
 
       <summary>
 
-        <img src="https://i.pinimg.com/736x/e8/0c/92/e80c92f73c5df5c9f5905e68aeeb79e1.jpg">
+        <div class="catalog-image">
 
-        <div>
-          <h3>Perfumes Importados</h3>
-          <p>"Perfumes originales que marcan estilo"</p>
+          <img
+            src="https://i.pinimg.com/736x/e8/0c/92/e80c92f73c5df5c9f5905e68aeeb79e1.jpg"
+            alt="Perfumes Importados"
+          >
+
+        </div>
+
+        <div class="catalog-info">
+
+          <span class="category-number">
+            02
+          </span>
+
+          <h3>
+            Perfumes Importados
+          </h3>
+
+          <p>
+            "Perfumes originales que marcan estilo"
+          </p>
+
+          <span class="open-text">
+            Ver opciones disponibles ↓
+          </span>
+
         </div>
 
       </summary>
 
-     <ul>
-        <li>Carolina Herrera</li>
-        <li>Dior</li>
-        <li>Versace</li>
-        <li>Burberry</li>
-        <li>Chanel</li>
-        <li>Yves Saint Laurent</li>
-        <li>Prada</li>
-        <li>Valentino</li>
-        <li>Dolce & Gabbana</li>
-        <li>Jean Paul Gaultier</li>
-      </ul>
+
+      <div class="catalog-content">
+
+        <ul>
+
+          <li>Carolina Herrera</li>
+          <li>Dior</li>
+          <li>Versace</li>
+          <li>Burberry</li>
+          <li>Chanel</li>
+          <li>Yves Saint Laurent</li>
+          <li>Prada</li>
+          <li>Valentino</li>
+          <li>Dolce & Gabbana</li>
+          <li>Jean Paul Gaultier</li>
+
+        </ul>
+
+      </div>
 
     </details>
 
-    <!-- ITEM -->
-    <details class="item">
+
+
+    <!-- ================= ARABES ================= -->
+
+    <details class="item cascade">
 
       <summary>
 
-        <img src="https://i.pinimg.com/736x/a9/2e/1e/a92e1e2408e2854b0006758b8f8d237d.jpg">
+        <div class="catalog-image">
 
-        <div>
-          <h3>Perfumes Árabes</h3>
-          <p>"El encanto del Oriente en una fragancia"</p>
+          <img
+            src="https://i.pinimg.com/736x/a9/2e/1e/a92e1e2408e2854b0006758b8f8d237d.jpg"
+            alt="Perfumes Árabes"
+          >
+
+        </div>
+
+        <div class="catalog-info">
+
+          <span class="category-number">
+            03
+          </span>
+
+          <h3>
+            Perfumes Árabes
+          </h3>
+
+          <p>
+            "El encanto del Oriente en una fragancia"
+          </p>
+
+          <span class="open-text">
+            Ver opciones disponibles ↓
+          </span>
+
         </div>
 
       </summary>
 
-      <ul>
-        <li>Lattafa</li>
-        <li>French Avenue</li>
-        <li>Armaf</li>
-        <li>Maison Alhambra</li>
-        <li>Al Wataniah</li>
-        <li>Asdaaf</li>
-      </ul>
+
+      <div class="catalog-content">
+
+        <ul>
+
+          <li>Lattafa</li>
+          <li>French Avenue</li>
+          <li>Armaf</li>
+          <li>Maison Alhambra</li>
+          <li>Al Wataniah</li>
+          <li>Asdaaf</li>
+
+        </ul>
+
+      </div>
 
     </details>
-       <details class="item">
+
+
+
+    <!-- ================= MINIATURAS ================= -->
+
+    <details class="item cascade">
+
       <summary>
-        <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-ly3sid3jjg1jd5">
-        <div>
-          <h3>Miniaturas</h3>
-          <p>"Tu esencia en versión mini"</p>
+
+        <div class="catalog-image">
+
+          <img
+            src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-ly3sid3jjg1jd5"
+            alt="Miniaturas de Perfumes"
+          >
+
         </div>
+
+        <div class="catalog-info">
+
+          <span class="category-number">
+            04
+          </span>
+
+          <h3>
+            Miniaturas
+          </h3>
+
+          <p>
+            "Tu esencia en versión mini"
+          </p>
+
+          <span class="open-text">
+            Ver opciones disponibles ↓
+          </span>
+
+        </div>
+
       </summary>
-      <ul>
-        <li>Brand Collection</li>
-        <li>Onlyou Collection</li>
-        <li>Mystical Arabes</li>
-      </ul>
+
+
+      <div class="catalog-content">
+
+        <ul>
+
+          <li>Brand Collection</li>
+          <li>Onlyou Collection</li>
+          <li>Mystical Arabes</li>
+
+        </ul>
+
+      </div>
+
     </details>
+
 
   </div>
 
 </section>
 
-<!-- ================= NOSOTROS ================= -->
+
+
+<!-- =====================================================
+     NOSOTROS
+===================================================== -->
+
 <section id="nosotros" class="section alt">
 
-  <h2 class="title">Sobre Nosotros</h2>
+  <div class="section-heading reveal">
 
-  <div class="box">
-    “Somos una tienda especializada en perfumes originales, importados y exclusivos. 
-    Nuestro objetivo es ofrecer calidad, elegancia y confianza en cada fragancia, 
-    brindando aromas únicos que reflejan tu estilo y personalidad.”
+    <span>CONOCÉ FOREVER ROSE</span>
+
+    <h2 class="title">
+      Sobre Nosotros
+    </h2>
+
+  </div>
+
+
+  <div class="about-container">
+
+    <div class="box about-box reveal">
+
+      <div class="about-icon">
+        ♡
+      </div>
+
+      <h3>
+        Nuestra esencia
+      </h3>
+
+      <p>
+        “Somos una tienda especializada en perfumes originales,
+        importados y exclusivos. Nuestro objetivo es ofrecer
+        calidad, elegancia y confianza en cada fragancia,
+        brindando aromas únicos que reflejan tu estilo
+        y personalidad.”
+      </p>
+
+    </div>
+
+
+    <div class="box about-box reveal">
+
+      <div class="about-icon">
+        ✦
+      </div>
+
+      <h3>
+        Nuestra misión
+      </h3>
+
+      <p>
+        Seleccionamos fragancias especiales para que cada
+        persona pueda encontrar un perfume que represente
+        su personalidad y haga de cada momento una experiencia
+        inolvidable.
+      </p>
+
+    </div>
+
   </div>
 
 </section>
 
-<!-- ================= ENVIOS ================= -->
+
+
+<!-- =====================================================
+     ENVIOS
+===================================================== -->
+
 <section id="envios" class="section">
 
-  <h2 class="title">Envíos</h2>
+  <div class="shipping reveal">
 
-  <div class="box">
-   Realizamos envíos rápidos, seguros y confiables.
+    <span class="section-label">
+      ENVÍOS
+    </span>
+
+    <h2>
+      Envíos rápidos y seguros
+    </h2>
+
+    <p>
+      Realizamos envíos rápidos, seguros y confiables
+      para que puedas recibir tus fragancias favoritas
+      donde estés.
+    </p>
+
+    <a
+      href="https://wa.me/595982464935?text=Hola%20Forever%20Rose%2C%20quisiera%20consultar%20sobre%20los%20env%C3%ADos."
+      class="btn"
+      target="_blank"
+    >
+      Consultar por WhatsApp
+    </a>
+
   </div>
 
 </section>
 
-<!-- ================= METODOS DE PAGO ================= -->
+
+
+<!-- =====================================================
+     METODOS DE PAGO
+===================================================== -->
+
 <section class="section alt">
 
-  <h2 class="title">Métodos de Pago</h2>
+  <div class="section-heading reveal">
 
-  <div class="box">
+    <span>FACILIDADES PARA VOS</span>
 
-    <p>✔ PIX</p>
-    <p>✔ Parcelado hasta 4 veces</p>
-    <p>✔ Tarjeta de débito y crédito</p>
-    <p>✔ Efectivo (Real, Guaraníes y Dólares)</p>
+    <h2 class="title">
+      Métodos de Pago
+    </h2>
+
+  </div>
+
+
+  <div class="payment-container">
+
+
+    <div class="payment-card reveal">
+
+      <span>PIX</span>
+
+      <p>
+        Pagá de manera rápida y sencilla.
+      </p>
+
+    </div>
+
+
+    <div class="payment-card reveal">
+
+      <span>4x</span>
+
+      <p>
+        Parcelado hasta 4 veces.
+      </p>
+
+    </div>
+
+
+    <div class="payment-card reveal">
+
+      <span>💳</span>
+
+      <p>
+        Tarjeta de débito y crédito.
+      </p>
+
+    </div>
+
+
+    <div class="payment-card reveal">
+
+      <span>💵</span>
+
+      <p>
+        Efectivo en Real, Guaraníes y Dólares.
+      </p>
+
+    </div>
+
 
   </div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+
+
+<!-- =====================================================
+     CONSULTAS Y PEDIDOS
+===================================================== -->
+
+<section id="pedidos" class="section pedidos-section">
+
+  <div class="section-heading reveal">
+
+    <span>ESTAMOS PARA AYUDARTE</span>
+
+    <h2 class="title">
+      Consultas y Pedidos
+    </h2>
+
+    <p>
+      ¿Buscás un perfume específico?
+      Contanos qué fragancia querés y te ayudamos.
+    </p>
+
+  </div>
+
+
+  <div class="pedido-container reveal">
+
+
+    <div class="pedido-info">
+
+      <div class="pedido-decoration">
+        ✦
+      </div>
+
+      <h3>
+        Encontrá tu próxima fragancia
+      </h3>
+
+      <p>
+        Podés consultar por cualquier perfume de tu preferencia,
+        preguntar por disponibilidad o realizar directamente
+        tu pedido.
+      </p>
+
+      <p>
+        Completá el formulario y tu consulta será enviada
+        directamente por WhatsApp.
+      </p>
+
+    </div>
+
+
+    <form id="pedidoForm" class="pedido-form">
+
+      <label for="nombre">
+        Tu nombre
+      </label>
+
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Ej.: Katherine"
+        required
+      >
+
+      <label for="atencion">
+        ¿Con quién querés comunicarte?
+      </label>
+
+      <select id="atencion" required>
+        <option value="">Seleccioná una persona</option>
+        <option value="595982464935">Katherine Escobar — WhatsApp</option>
+        <option value="595982333266">Rebeca — WhatsApp</option>
+      </select>
+
+
+      <label for="perfume">
+        ¿Qué perfume buscás?
+      </label>
+
+      <input
+        type="text"
+        id="perfume"
+        placeholder="Ej.: Delina Exclusif"
+        required
+      >
+
+
+      <label for="tipo">
+        Categoría
+      </label>
+
+      <select id="tipo" required>
+
+        <option value="">
+          Seleccioná una categoría
+        </option>
+
+        <option value="Perfume Nicho">
+          Perfume Nicho
+        </option>
+
+        <option value="Perfume Importado">
+          Perfume Importado
+        </option>
+
+        <option value="Perfume Árabe">
+          Perfume Árabe
+        </option>
+
+        <option value="Miniatura">
+          Miniatura
+        </option>
+
+        <option value="No estoy seguro/a">
+          No estoy seguro/a
+        </option>
+
+      </select>
+
+
+      <label for="cantidad">
+        Cantidad
+      </label>
+
+      <input
+        type="number"
+        id="cantidad"
+        min="1"
+        value="1"
+        required
+      >
+
+
+      <label for="mensaje">
+        Tu consulta o pedido
+      </label>
+
+      <textarea
+        id="mensaje"
+        placeholder="Escribí aquí tu consulta, por ejemplo: quisiera saber el precio y disponibilidad..."
+        required
+      ></textarea>
+
+
+      <button
+        type="submit"
+        class="btn pedido-button"
+      >
+        💬 Enviar consulta por WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACTO
+===================================================== -->
+
 <footer id="contacto">
 
-  <h2>FOREVER ROSE - CONTACTOS</h2>
- 
-  <p>
-    <a href="https://wa.me/595982464935" class="WhatsApp" target="_blank">
-       Katherine Escobar
-    </a>
-  </p>
-   <p>
-    <a href="https://wa.me/595973547389" class="WhatsApp" target="_blank">
-       Sara Escobar
-    </a>
-  </p>
+  <div class="footer-content reveal">
+
+    <h2>
+      FOREVER ROSÉ
+    </h2>
+
+    <span class="footer-subtitle">
+      PERFUMERÍA
+    </span>
 
 
-  
+    <div class="footer-line"></div>
 
-  <p>
-    <a href="https://instagram.com/foreverrose_sdg" target="_blank">
-        Instagram: @foreverrose_sdg
-    </a>
-  </p>
 
-  <p>
-    © 2026 Todos los derechos reservados
-  </p>
+    <p>
+      Contactanos directamente por WhatsApp:
+    </p>
+
+
+    <p>
+
+      <a
+        href="https://wa.me/595982464935"
+        class="footer-contact"
+        target="_blank"
+      >
+        <span class="contact-circle">
+          K
+        </span>
+
+        Katherine Escobar
+
+      </a>
+
+    </p>
+
+
+    <p>
+
+      <a
+        href="https://wa.me/595982333266"
+        class="footer-contact"
+        target="_blank"
+      >
+        <span class="contact-circle">
+          R
+        </span>
+
+        Rebeca
+
+      </a>
+
+    </p>
+
+
+    <p class="instagram-footer">
+
+      <a
+        href="https://instagram.com/foreverrose_sdg"
+        target="_blank"
+      >
+
+        Instagram:
+        @foreverrose_sdg
+
+      </a>
+
+    </p>
+
+
+    <p class="copyright">
+      © 2026 Todos los derechos reservados
+    </p>
+
+  </div>
 
 </footer>
 
-<!-- ================= WHATSAPP ================= -->
+
+
+<!-- =====================================================
+     BOTONES FLOTANTES
+===================================================== -->
+
+
 <!-- WHATSAPP KATHERINE -->
 
-<!-- WHATSAPP SARA -->
-<a href="https://wa.me/595973547389"
-class="whatsapp whatsapp2"
-target="_blank">
-  S
-</a>
-<a href="https://wa.me/595982464935"
-class="whatsapp whatsapp1"
-target="_blank">
+<a
+  href="https://wa.me/595982464935"
+  class="whatsapp whatsapp1"
+  target="_blank"
+  aria-label="WhatsApp Katherine"
+>
+
   K
+
 </a>
+
+<!-- WHATSAPP REBECA -->
+
+<a
+  href="https://wa.me/595982333266"
+  class="whatsapp whatsapp2"
+  target="_blank"
+  aria-label="WhatsApp Rebeca"
+>
+
+  R
+
+</a>
+
+
+<!-- INSTAGRAM -->
+
+<a
+  href="https://instagram.com/foreverrose_sdg"
+  class="instagram-button"
+  target="_blank"
+  aria-label="Instagram Forever Rose"
+>
+
+  <svg
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+
+    <rect
+      x="3"
+      y="3"
+      width="18"
+      height="18"
+      rx="5"
+      ry="5"
+    ></rect>
+
+    <circle
+      cx="12"
+      cy="12"
+      r="4"
+    ></circle>
+
+    <circle
+      cx="17.5"
+      cy="6.5"
+      r="1"
+      class="instagram-dot"
+    ></circle>
+
+  </svg>
+
+</a>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+  /* ==========================================
+     ANIMACIÓN AL HACER SCROLL
+  ========================================== */
+
+  const elements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(
+
+    (entries) => {
+
+      entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add('active');
+
+        }
+
+      });
+
+    },
+
+    {
+      threshold: 0.15
+    }
+
+  );
+
+
+  elements.forEach((element) => {
+
+    observer.observe(element);
+
+  });
+
+
+
+  /* ==========================================
+     FORMULARIO DE PEDIDOS → WHATSAPP
+  ========================================== */
+
+  const pedidoForm = document.getElementById('pedidoForm');
+
+
+  pedidoForm.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+
+
+    const nombre =
+      document.getElementById('nombre').value;
+
+    const atencion =
+      document.getElementById('atencion').value;
+
+    const persona =
+      document.getElementById('atencion').selectedOptions[0].text;
+
+    const perfume =
+      document.getElementById('perfume').value;
+
+    const tipo =
+      document.getElementById('tipo').value;
+
+    const cantidad =
+      document.getElementById('cantidad').value;
+
+    const mensaje =
+      document.getElementById('mensaje').value;
+
+
+    const texto =
+
+      `Hola Forever Rose 🌹
+
+` +
+
+      `Mi nombre es: ${nombre}
+
+` +
+
+      `Quiero comunicarme con: ${persona}
+
+` +
+
+      `Quisiera consultar/pedir:
+
+` +
+
+      `Perfume: ${perfume}
+` +
+
+      `Categoría: ${tipo}
+` +
+
+      `Cantidad: ${cantidad}
+
+` +
+
+      `Mi consulta/pedido:
+${mensaje}
+
+` +
+
+      `Muchas gracias 💕`;
+
+
+    const whatsappURL =
+
+      `https://wa.me/${atencion}?text=${encodeURIComponent(texto)}`;
+
+
+    window.open(
+      whatsappURL,
+      '_blank'
+    );
+
+  });
+
+
+</script>
+
 
 </body>
 </html>
